@@ -4,6 +4,8 @@ import { StyleSheet, Text, View, Image } from 'react-native'
 import React from 'react'
 import Slider from 'react-native-slide-to-unlock';
 
+import PropTypes from 'prop-types';
+
 const SwipableButton = ({text,handlePress}) => {
   return (
     <View style={styles.view}>
@@ -34,6 +36,11 @@ const SwipableButton = ({text,handlePress}) => {
       </Slider>
     </View>
   )
+}
+
+SwipableButton.propTypes = {
+	text: PropTypes.string.isRequired,
+	handlePress: PropTypes.func.isRequired
 }
 
 export default SwipableButton

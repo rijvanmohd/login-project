@@ -8,20 +8,23 @@ import { useDispatch } from 'react-redux';
 import { setDetail } from '../store/actions/detail';
 
 import DeviceInfo from 'react-native-device-info';
+import PropTypes from 'prop-types';
 
 import Button from '../components/GenericButton';
 
+import CustomAlert from '../components/CustomAlert';
+
 function WelcomeScreen({navigation}) {
 	const [name, setName] = useState('')
+	const [onEmulator, setOnEmulator] = useState(false)
 	const dispatch = useDispatch();
 
 	useEffect(() => {
 		DeviceInfo.isEmulator().then((isEmulator) => {
 		  if (isEmulator) {
-			Alert.alert('Attention', 'You are running this app on emulator!');
+				setOnEmulator(true)
 		  }
 		});
-	
 	}, [])
 
 	const clickHandler = () => {
@@ -36,6 +39,15 @@ function WelcomeScreen({navigation}) {
 
   return (
     <View style={styles.screen}>
+				{
+					onEmulator &&
+					<CustomAlert 
+						mode="Attention" 
+						message="You are running this app on an emulator."
+						visibility={true}
+						dismissAlert={()=>setOnEmulator(false)}
+					/>
+				}
         <Text style={styles.heading}>Welcome</Text>
 				<TextInput 
 					autoFocus={true} 
@@ -50,6 +62,10 @@ function WelcomeScreen({navigation}) {
         <Button variant="fill" text="Go to next" handlePress={clickHandler}/>
     </View>
   )
+}
+
+WelcomeScreen.propTypes = {
+	navigation: PropTypes.object
 }
 
 export default WelcomeScreen
@@ -79,3 +95,4 @@ const styles = StyleSheet.create({
 			fontWeight: "500",
 		}
 })
+

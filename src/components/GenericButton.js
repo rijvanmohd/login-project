@@ -11,6 +11,8 @@ import React from 'react'
 
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 
+import PropTypes from 'prop-types';
+
 const GenericButton = ({ variant, text, handlePress }) => {
   const isDarkMode = useColorScheme() === 'dark';
   return (
@@ -28,6 +30,12 @@ const GenericButton = ({ variant, text, handlePress }) => {
         </View>
     </TouchableOpacity>
   )
+}
+
+GenericButton.propTypes = {
+	variant: PropTypes.string.isRequired,
+	text: PropTypes.string.isRequired,
+	handlePress: PropTypes.func.isRequired
 }
 
 export default GenericButton

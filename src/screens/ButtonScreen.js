@@ -3,6 +3,7 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { useSelector } from 'react-redux'
+import PropTypes from 'prop-types';
 
 import GenericButton from '../components/GenericButton';
 import SwipableButton from '../components/SwipableButton';
@@ -30,6 +31,10 @@ const ButtonScreen = ({navigation}) => {
 			</View>
     </View>
   )
+}
+
+GenericButton.propTypes = {
+	navigation: PropTypes.object
 }
 
 export default ButtonScreen

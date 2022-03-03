@@ -3,10 +3,11 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { useSelector } from 'react-redux'
+import PropTypes from 'prop-types';
 
 import GenericButton from '../components/GenericButton'
 
-const ButtonScreen = ({navigation}) => {
+const ProfileScreen = ({navigation}) => {
 	const name = useSelector(({ detail }) => detail.name)
 	const clickHandlerToHome = () => {
 		navigation.navigate('Home')
@@ -24,7 +25,11 @@ const ButtonScreen = ({navigation}) => {
   )
 }
 
-export default ButtonScreen
+ProfileScreen.propTypes = {
+	navigation: PropTypes.object
+}
+
+export default ProfileScreen
 
 const styles = StyleSheet.create({
     view: {
