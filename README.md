@@ -2,7 +2,8 @@
 
 ## Please refer the below screenshots -
 
-![Screenshot_1646310152](https://user-images.githubusercontent.com/98737807/156564500-bf7c7f89-53c3-4b8f-813c-d1cffc0ebb3d.png)
-![Screenshot_1646310159](https://user-images.githubusercontent.com/98737807/156564516-8ee5641d-7298-47f4-8f38-69947d6f94da.png)
-![Screenshot_1646310169](https://user-images.githubusercontent.com/98737807/156564530-55471fc4-12b8-4b0c-a2c2-d5aaa49f6859.png)
-![Screenshot_1646310175](https://user-images.githubusercontent.com/98737807/156564543-5cabf0de-5121-481c-a629-efce56f27168.png)
+
+![Login](https://user-images.githubusercontent.com/22762880/159450685-15746c32-7fdc-4b89-a5dd-b2fc41607f80.png)
+![Profile2](https://user-images.githubusercontent.com/22762880/159450709-71517a9e-7845-4673-8fcd-d73b946bcb43.png)
+![Profile1](https://user-images.githubusercontent.com/22762880/159450710-bb64524b-58a6-4dc2-b0cd-923c25ad42a0.png)
+![WhatsApp Image 2022-03-22 at 3 04 24 PM](https://user-images.githubusercontent.com/22762880/159450719-b7c4fe00-89b9-4057-be1c-0bc412bd5605.jpeg)
