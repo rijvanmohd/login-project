@@ -1,17 +1,17 @@
-import { SET_NAME } from '../actions/actionTypes'
+import {SET_DATA} from '../actions/actionTypes';
 
 const initialState = {
-  name: ''
-}
+  data: {},
+};
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case SET_NAME:
+    case SET_DATA:
       return {
         ...state,
-        name: action.name,
-      }
+        data: action.data,
+      };
     default:
-      return state
+      return state;
   }
-}
+};

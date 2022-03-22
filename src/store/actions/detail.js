@@ -1,6 +1,6 @@
-import { SET_NAME } from './actionTypes'
+import {SET_DATA} from './actionTypes';
 
-export const setDetail = name => ({
-  type: SET_NAME,
-  name
-})
+export const setDetail = data => ({
+  type: SET_DATA,
+  data,
+});
